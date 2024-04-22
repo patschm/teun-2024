@@ -12,4 +12,9 @@ public record Date
     public int Year { get; init; }
     public int Month { get; init; }
     public int Day { get; init; }
+
+    public static implicit operator Date(DateTime date)
+    {
+        return new Date(date.Year, date.Month, date.Day);
+    }
 }

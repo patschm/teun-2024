@@ -23,4 +23,17 @@ public class DateTest
         Assert.Equal(month, date.Month);
         Assert.Equal(day, date.Day);
     }
+
+    [Fact]
+    public void DateTime_Should_Be_Valid()
+    {
+        var dt = new DateTime(2005, 9, 9);
+
+        Date date = dt;
+
+        Assert.NotNull(date);
+        Assert.Equal(dt.Year, date.Year);
+        Assert.Equal(dt.Month, date.Month);
+        Assert.Equal(dt.Day, date.Day);
+    }
 }

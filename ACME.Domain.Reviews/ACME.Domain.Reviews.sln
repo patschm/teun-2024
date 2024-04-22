@@ -3,9 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.9.34723.18
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACME.Domain.Reviews", "ACME.Domain.Reviews\ACME.Domain.Reviews.csproj", "{F80A4E52-5959-4A0A-BBF8-973075AD18AC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACME.Domain.Reviews", "ACME.Domain.Reviews\ACME.Domain.Reviews.csproj", "{F80A4E52-5959-4A0A-BBF8-973075AD18AC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACME.Domain.Reviews.Tests", "ACME.Domain.Reviews.Tests\ACME.Domain.Reviews.Tests.csproj", "{1BF90BE2-6F09-4A17-B192-FFBED2BE9580}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACME.Domain.Reviews.Tests", "ACME.Domain.Reviews.Tests\ACME.Domain.Reviews.Tests.csproj", "{1BF90BE2-6F09-4A17-B192-FFBED2BE9580}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACME.Infrastructure.Reviews", "ACME.Infrastructure.Reviews\ACME.Infrastructure.Reviews.csproj", "{2AAA0982-62C3-4E85-87A1-399552236D9C}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{1BF90BE2-6F09-4A17-B192-FFBED2BE9580}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1BF90BE2-6F09-4A17-B192-FFBED2BE9580}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1BF90BE2-6F09-4A17-B192-FFBED2BE9580}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2AAA0982-62C3-4E85-87A1-399552236D9C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2AAA0982-62C3-4E85-87A1-399552236D9C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2AAA0982-62C3-4E85-87A1-399552236D9C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2AAA0982-62C3-4E85-87A1-399552236D9C}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
