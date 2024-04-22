@@ -1,0 +1,11 @@
+@ACME.Api.Reviews_HostAddress = https://localhost:7145
+
+GET {{ACME.Api.Reviews_HostAddress}}/reviews?page=1&amount=10
+Accept: application/json
+
+###
+
+GET {{ACME.Api.Reviews_HostAddress}}/reviews/1
+Accept: application/json
+
+###
