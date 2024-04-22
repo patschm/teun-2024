@@ -105,7 +105,7 @@ public partial class ShopContext : DbContext
         modelBuilder.Entity<Review>(entity =>
         {
             entity.ToTable("Reviews", "Core");
-
+            entity.Navigation(r => r.Reviewer).AutoInclude();
             entity.HasIndex(e => e.ProductId, "IX_Reviews_ProductId");
 
             entity.HasIndex(e => e.ReviewerId, "IX_Reviews_ReviewerId");
