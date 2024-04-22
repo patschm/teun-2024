@@ -9,4 +9,9 @@ public record Score
         Value = score;      
     }
     public byte Value { get; init; }
+
+    public static implicit operator Score(byte value)
+    {
+        return new Score(value);
+    }
 }
