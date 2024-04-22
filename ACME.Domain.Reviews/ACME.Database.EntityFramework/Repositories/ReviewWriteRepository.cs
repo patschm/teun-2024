@@ -16,6 +16,7 @@ public class ReviewWriteRepository : IReviewWriteRepository
     public async Task CreateAsync(Review review)
     {
         var dbReview = review.ToEntityReview();
+        //dbReview.Id = 0;
         _shopContext.Reviews.Add(dbReview);
         await _shopContext.SaveChangesAsync();
     }

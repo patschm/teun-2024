@@ -9,3 +9,19 @@ GET {{ACME.Api.Reviews_HostAddress}}/reviews/1
 Accept: application/json
 
 ###
+
+
+POST {{ACME.Api.Reviews_HostAddress}}/reviews
+Content-Type: application/json
+
+{
+  "id": 1,
+  "productId": 1,
+  "reviewerId": 30,
+  "reviewerName": "Tito Tromp",
+  "score": 4,
+  "text": "Pretty OK",
+  "purchaseDate": "2022-01-02T00:00:00"
+}
+###
+
