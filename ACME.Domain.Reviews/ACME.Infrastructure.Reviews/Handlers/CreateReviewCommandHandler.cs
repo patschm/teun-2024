@@ -15,6 +15,6 @@ public class CreateReviewCommandHandler : IRequestHandler<CreateReviewCommand>
 
     public async Task Handle(CreateReviewCommand request, CancellationToken cancellationToken)
     {
-        await _repository.CreateAsync(request.review);
+        await _repository.CreateAsync(request.Review);
     }
 }

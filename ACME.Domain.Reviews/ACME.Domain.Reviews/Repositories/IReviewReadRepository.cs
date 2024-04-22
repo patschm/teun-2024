@@ -7,5 +7,5 @@ public interface IReviewReadRepository
 {
     Task<IEnumerable<Review>> GetAllAsync(ReviewParameters paramaters);
     Task<IEnumerable<Review>> GetByProductAsync(Product product, ReviewParameters parameters);
-    Task<Review> GetByIdAsync(int id);
+    Task<Review> GetByIdAsync(long id);
 }
