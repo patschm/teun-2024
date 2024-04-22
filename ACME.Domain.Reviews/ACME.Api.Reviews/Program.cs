@@ -66,3 +66,6 @@ app.MapGet("/reviews/{id:long}", async ([FromServices] ISender sender, [FromRout
 .WithOpenApi();
 
 app.Run();
+
+// For Integration Tests
+public partial class Program { }

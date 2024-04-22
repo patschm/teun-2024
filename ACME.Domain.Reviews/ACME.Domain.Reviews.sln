@@ -7,11 +7,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACME.Domain.Reviews", "ACME
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACME.Domain.Reviews.Tests", "ACME.Domain.Reviews.Tests\ACME.Domain.Reviews.Tests.csproj", "{1BF90BE2-6F09-4A17-B192-FFBED2BE9580}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACME.Infrastructure.Reviews", "ACME.Infrastructure.Reviews\ACME.Infrastructure.Reviews.csproj", "{2AAA0982-62C3-4E85-87A1-399552236D9C}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACME.Infrastructure.Reviews", "ACME.Infrastructure.Reviews\ACME.Infrastructure.Reviews.csproj", "{2AAA0982-62C3-4E85-87A1-399552236D9C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACME.Database.EntityFramework", "ACME.Database.EntityFramework\ACME.Database.EntityFramework.csproj", "{2D281715-2B79-4044-ABF3-BAA2A7D21393}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACME.Database.EntityFramework", "ACME.Database.EntityFramework\ACME.Database.EntityFramework.csproj", "{2D281715-2B79-4044-ABF3-BAA2A7D21393}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACME.Api.Reviews", "ACME.Api.Reviews\ACME.Api.Reviews.csproj", "{3FDCCADD-EFB1-435F-A697-C9F85786C44F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACME.Api.Reviews", "ACME.Api.Reviews\ACME.Api.Reviews.csproj", "{3FDCCADD-EFB1-435F-A697-C9F85786C44F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACME.Api.Reviews.IntegrationTests", "ACME.Api.Reviews.IntegrationTests\ACME.Api.Reviews.IntegrationTests.csproj", "{B4EDE648-FB17-4334-A101-DFAECEF155F9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +41,10 @@ Global
 		{3FDCCADD-EFB1-435F-A697-C9F85786C44F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3FDCCADD-EFB1-435F-A697-C9F85786C44F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3FDCCADD-EFB1-435F-A697-C9F85786C44F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B4EDE648-FB17-4334-A101-DFAECEF155F9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B4EDE648-FB17-4334-A101-DFAECEF155F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B4EDE648-FB17-4334-A101-DFAECEF155F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B4EDE648-FB17-4334-A101-DFAECEF155F9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
