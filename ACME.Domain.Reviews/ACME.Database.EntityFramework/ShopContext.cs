@@ -1,8 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using ACME.Database.EntityFramework.Models;
+﻿using ACME.Database.EntityFramework.Models;
 using Microsoft.EntityFrameworkCore;
 
+
+// Scaffold - DbContext "Server=.\SqlExpress;Database=ProductCatalog;Trusted_Connection=True;TrustServerCertificate=True" Microsoft.EntityFrameworkCore.SqlServer - OutputDir Models - Context ShopContext
 namespace ACME.Database.EntityFramework;
 
 public partial class ShopContext : DbContext
