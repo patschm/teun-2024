@@ -13,11 +13,12 @@ public class ReviewWriteRepository : IReviewWriteRepository
         _shopContext = shopContext;
     }
 
-    public async Task CreateAsync(Review review)
+    public async Task<Review> CreateAsync(Review review)
     {
         var dbReview = review.ToEntityReview();
-        //dbReview.Id = 0;
+        dbReview.Id = 0;
         _shopContext.Reviews.Add(dbReview);
         await _shopContext.SaveChangesAsync();
+        return dbReview.ToDomainReview();
     }
 }

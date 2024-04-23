@@ -16,7 +16,7 @@ Content-Type: application/json
 
 {
   "id": 1,
-  "productId": 1,
+  "ProductId": 1,
   "reviewerId": 30,
   "reviewerName": "Tito Tromp",
   "score": 4,

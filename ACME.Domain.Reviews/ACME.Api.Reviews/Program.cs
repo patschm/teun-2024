@@ -21,7 +21,7 @@ builder.Services.AddDbContext<ShopContext>(opts => {
 });
 builder.Services.AddScoped<IReviewReadRepository, ReviewReadRepository>();
 builder.Services.AddScoped<IReviewWriteRepository, ReviewWriteRepository>();
-//builder.Services.AddScoped<IValidator<ReviewDTO>, ReviewValidator>();
+builder.Services.AddScoped<IValidator<ReviewDTO>, ReviewValidator>();
 builder.Services.AddMediatR(conf => {
     conf.RegisterServicesFromAssemblies(
         ACME.Infrastructure.Reviews.AssemblyReference.Assembly
@@ -63,6 +63,25 @@ app.MapGet("/reviews/{id:long}", async ([FromServices] ISender sender, [FromRout
     }  
 })
 .WithName("GetReview")
+.WithOpenApi();
+
+app.MapPost("/reviews", async ([FromServices] ISender sender, [FromServices]IValidator<ReviewDTO> val, [FromBody]ReviewDTO dto) =>
+{
+
+    var valResult = val.Validate(dto);
+    if (!valResult.IsValid) return Results.BadRequest(valResult.ToDictionary());
+    try
+    {
+        var review = dto.ToDomainReview();
+        var reviewResult = await sender.Send(new CreateReviewCommand(review));
+        return Results.CreatedAtRoute("GetReview", new { id = reviewResult.Id }, reviewResult.ToDTOReview());
+    }
+    catch (Exception e)
+    {
+        return Results.BadRequest(e.Message);
+    }
+})
+.WithName("PostReview")
 .WithOpenApi();
 
 app.Run();

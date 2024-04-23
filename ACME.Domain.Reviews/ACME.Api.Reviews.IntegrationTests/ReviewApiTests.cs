@@ -1,8 +1,4 @@
 using ACME.Api.Reviews.IntegrationTests.Fixtures;
-using ACME.Api.Reviews.IntegrationTests.MemoryRepository;
-using ACME.Domain.Reviews.Repositories;
-using Microsoft.AspNetCore.Mvc;
-using Microsoft.AspNetCore.Mvc.Testing;
 using System.Net;
 
 namespace ACME.Api.Reviews.IntegrationTests;

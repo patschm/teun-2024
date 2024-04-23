@@ -3,5 +3,5 @@ using MediatR;
 
 namespace ACME.Infrastructure.Reviews.Commands;
 
-public record CreateReviewCommand(Review Review) : IRequest;
+public record CreateReviewCommand(Review Review) : IRequest<Review>;
 

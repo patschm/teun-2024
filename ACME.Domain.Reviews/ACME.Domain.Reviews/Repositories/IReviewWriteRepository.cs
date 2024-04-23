@@ -4,5 +4,5 @@ namespace ACME.Domain.Reviews.Repositories;
 
 public interface IReviewWriteRepository
 {
-    Task CreateAsync(Review review);
+    Task<Review> CreateAsync(Review review);
 }

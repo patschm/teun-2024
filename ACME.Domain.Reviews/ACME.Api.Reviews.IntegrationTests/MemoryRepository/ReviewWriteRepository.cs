@@ -5,8 +5,8 @@ namespace ACME.Api.Reviews.IntegrationTests.MemoryRepository;
 
 public class ReviewWriteRepository : IReviewWriteRepository
 {
-    public Task CreateAsync(Review review)
+    public Task<Review> CreateAsync(Review review)
     {
-        return Task.CompletedTask;
+        return Task.FromResult(review);
     }
 }

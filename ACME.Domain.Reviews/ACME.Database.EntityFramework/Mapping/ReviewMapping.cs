@@ -9,7 +9,7 @@ public static class ReviewMapping
         return Review.Create(
                 r.Id,
                 new Product(r.ProductId),
-                new Reviewer(r.ReviewerId ?? 0, r.Reviewer!.Name),
+                new Reviewer(r.ReviewerId ?? 0, r.Reviewer == null? "":r.Reviewer.Name),
                 r.Score,
                 r.Text ?? "",
                 r.DateBought ?? DateTime.Now);
