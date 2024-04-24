@@ -13,7 +13,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACME.Database.EntityFramewo
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACME.Api.Reviews", "ACME.Api.Reviews\ACME.Api.Reviews.csproj", "{3FDCCADD-EFB1-435F-A697-C9F85786C44F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACME.Api.Reviews.IntegrationTests", "ACME.Api.Reviews.IntegrationTests\ACME.Api.Reviews.IntegrationTests.csproj", "{B4EDE648-FB17-4334-A101-DFAECEF155F9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ACME.Api.Reviews.IntegrationTests", "ACME.Api.Reviews.IntegrationTests\ACME.Api.Reviews.IntegrationTests.csproj", "{B4EDE648-FB17-4334-A101-DFAECEF155F9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ACME.Clients.Console", "ACME.Clients.Console\ACME.Clients.Console.csproj", "{FA3A822D-5053-464A-A13B-52493642DB14}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -45,6 +47,10 @@ Global
 		{B4EDE648-FB17-4334-A101-DFAECEF155F9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B4EDE648-FB17-4334-A101-DFAECEF155F9}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B4EDE648-FB17-4334-A101-DFAECEF155F9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA3A822D-5053-464A-A13B-52493642DB14}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA3A822D-5053-464A-A13B-52493642DB14}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA3A822D-5053-464A-A13B-52493642DB14}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA3A822D-5053-464A-A13B-52493642DB14}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
